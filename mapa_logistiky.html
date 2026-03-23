@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e555ade0cbd0c4cb63b27aefbc9b4bce {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e555ade0cbd0c4cb63b27aefbc9b4bce" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e555ade0cbd0c4cb63b27aefbc9b4bce = L.map(
+                "map_e555ade0cbd0c4cb63b27aefbc9b4bce",
+                {
+                    center: [49.0, 16.5],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 8,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_15300f737365ed55f5eaff2f1c62bea5 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_15300f737365ed55f5eaff2f1c62bea5.addTo(map_e555ade0cbd0c4cb63b27aefbc9b4bce);
+        
+    
+            var marker_c575df0ac9cfce6c10b82262a8a7b22d = L.marker(
+                [49.2149, 15.8817],
+                {
+}
+            ).addTo(map_e555ade0cbd0c4cb63b27aefbc9b4bce);
+        
+    
+            var icon_333762995a9d6bc58dac1875756823a7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "briefcase",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8c1bae6449d3574c927c6b293b6e176a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_882329e22d1299c31c70e7a9f0376eba = $(`<div id="html_882329e22d1299c31c70e7a9f0376eba" style="width: 100.0%; height: 100.0%;"><b>FIRMA:</b> SOK (Třebíč)<br><a href="https://www.sok.cz/" target="_blank">Webová stránka výrobce</a></div>`)[0];
+                popup_8c1bae6449d3574c927c6b293b6e176a.setContent(html_882329e22d1299c31c70e7a9f0376eba);
+            
+        
+
+        marker_c575df0ac9cfce6c10b82262a8a7b22d.bindPopup(popup_8c1bae6449d3574c927c6b293b6e176a)
+        ;
+
+        
+    
+    
+                marker_c575df0ac9cfce6c10b82262a8a7b22d.setIcon(icon_333762995a9d6bc58dac1875756823a7);
+            
+    
+            var marker_7ee869d23d400371aaa46846bc943a2d = L.marker(
+                [49.2154, 17.8444],
+                {
+}
+            ).addTo(map_e555ade0cbd0c4cb63b27aefbc9b4bce);
+        
+    
+            var icon_4f71ee8180c5ccb90944136a8cce7924 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "briefcase",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f101ac3fb79668e26cd0d11fe4e14f01 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e52feddfd9d07ff2f911018d42ddcb71 = $(`<div id="html_e52feddfd9d07ff2f911018d42ddcb71" style="width: 100.0%; height: 100.0%;"><b>FIRMA:</b> KOMA MODULAR (Vizovice)<br><a href="https://www.koma-modular.cz/" target="_blank">Webová stránka výrobce</a></div>`)[0];
+                popup_f101ac3fb79668e26cd0d11fe4e14f01.setContent(html_e52feddfd9d07ff2f911018d42ddcb71);
+            
+        
+
+        marker_7ee869d23d400371aaa46846bc943a2d.bindPopup(popup_f101ac3fb79668e26cd0d11fe4e14f01)
+        ;
+
+        
+    
+    
+                marker_7ee869d23d400371aaa46846bc943a2d.setIcon(icon_4f71ee8180c5ccb90944136a8cce7924);
+            
+    
+            var marker_270aaaad80367316596401eedc186f91 = L.marker(
+                [48.2961, 16.4678],
+                {
+}
+            ).addTo(map_e555ade0cbd0c4cb63b27aefbc9b4bce);
+        
+    
+            var icon_c1db3c110444caeff678d4d8989a38eb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "briefcase",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3db800b3a9ba574d0039d0134a69a49e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5ea8eb6578c9c3785f02b57079dd0446 = $(`<div id="html_5ea8eb6578c9c3785f02b57079dd0446" style="width: 100.0%; height: 100.0%;"><b>FIRMA:</b> STRABAG (Mischek Gerasdorf)<br><a href="https://www.mischek-systembau.at/" target="_blank">Webová stránka výrobce</a></div>`)[0];
+                popup_3db800b3a9ba574d0039d0134a69a49e.setContent(html_5ea8eb6578c9c3785f02b57079dd0446);
+            
+        
+
+        marker_270aaaad80367316596401eedc186f91.bindPopup(popup_3db800b3a9ba574d0039d0134a69a49e)
+        ;
+
+        
+    
+    
+                marker_270aaaad80367316596401eedc186f91.setIcon(icon_c1db3c110444caeff678d4d8989a38eb);
+            
+    
+            var marker_6d7b1855e9425dc736020223339ff95a = L.marker(
+                [49.2319, 16.5771],
+                {
+}
+            ).addTo(map_e555ade0cbd0c4cb63b27aefbc9b4bce);
+        
+    
+            var icon_1ecec0d6505cc5cb75d920d6f658c6f2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "briefcase",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2eb22026d147cc4089ed96d52efa94ab = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f44af6dc3ff591dd47d2bfbe9002a0ba = $(`<div id="html_f44af6dc3ff591dd47d2bfbe9002a0ba" style="width: 100.0%; height: 100.0%;"><b>FIRMA:</b> STRABAG (Brno)<br><a href="https://www.strabag.cz/" target="_blank">Webová stránka výrobce</a></div>`)[0];
+                popup_2eb22026d147cc4089ed96d52efa94ab.setContent(html_f44af6dc3ff591dd47d2bfbe9002a0ba);
+            
+        
+
+        marker_6d7b1855e9425dc736020223339ff95a.bindPopup(popup_2eb22026d147cc4089ed96d52efa94ab)
+        ;
+
+        
+    
+    
+                marker_6d7b1855e9425dc736020223339ff95a.setIcon(icon_1ecec0d6505cc5cb75d920d6f658c6f2);
+            
+    
+            var marker_3892050245f7c14dcb59b6dc89ac0486 = L.marker(
+                [49.9334, 17.272],
+                {
+}
+            ).addTo(map_e555ade0cbd0c4cb63b27aefbc9b4bce);
+        
+    
+            var icon_34cc8781165fa30cdb7ddcd532425010 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "briefcase",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_676930646924e85b8dddf5d59e58263f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_08e7018b50a6ba0eb274f5e96708064b = $(`<div id="html_08e7018b50a6ba0eb274f5e96708064b" style="width: 100.0%; height: 100.0%;"><b>FIRMA:</b> VESPER HOMES (Rýmařov)<br><a href="https://www.vesperhomes.cz/" target="_blank">Webová stránka výrobce</a></div>`)[0];
+                popup_676930646924e85b8dddf5d59e58263f.setContent(html_08e7018b50a6ba0eb274f5e96708064b);
+            
+        
+
+        marker_3892050245f7c14dcb59b6dc89ac0486.bindPopup(popup_676930646924e85b8dddf5d59e58263f)
+        ;
+
+        
+    
+    
+                marker_3892050245f7c14dcb59b6dc89ac0486.setIcon(icon_34cc8781165fa30cdb7ddcd532425010);
+            
+    
+            var marker_b662b614c5c3258d41c3a881ac6b2fab = L.marker(
+                [49.5893, 17.2616],
+                {
+}
+            ).addTo(map_e555ade0cbd0c4cb63b27aefbc9b4bce);
+        
+    
+            var icon_45f7f012309456177ed8efcd8125a45c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "briefcase",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bc493858e284193cfe46ea8f88f54252 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c1f2db0eaecfc76b635f1163d7f428f0 = $(`<div id="html_c1f2db0eaecfc76b635f1163d7f428f0" style="width: 100.0%; height: 100.0%;"><b>FIRMA:</b> PROGRESS GROUP (Olomouc)<br><a href="https://www.progress.group/" target="_blank">Webová stránka výrobce</a></div>`)[0];
+                popup_bc493858e284193cfe46ea8f88f54252.setContent(html_c1f2db0eaecfc76b635f1163d7f428f0);
+            
+        
+
+        marker_b662b614c5c3258d41c3a881ac6b2fab.bindPopup(popup_bc493858e284193cfe46ea8f88f54252)
+        ;
+
+        
+    
+    
+                marker_b662b614c5c3258d41c3a881ac6b2fab.setIcon(icon_45f7f012309456177ed8efcd8125a45c);
+            
+    
+            var marker_f9fbc8bf1d43ba6da68a4cf7379e214d = L.marker(
+                [48.8355, 16.5113],
+                {
+}
+            ).addTo(map_e555ade0cbd0c4cb63b27aefbc9b4bce);
+        
+    
+            var icon_dc8d6e3462503e1e7cd6d151f4599e1d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "briefcase",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8f10b9da29a1f11ac28e46a4d3f4138d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1d9f8ffcbbcf7c41101961256cf30727 = $(`<div id="html_1d9f8ffcbbcf7c41101961256cf30727" style="width: 100.0%; height: 100.0%;"><b>FIRMA:</b> WIENERBERGER (Porotherm - Novosedly)<br><a href="https://www.wienerberger.cz/o-nas/kontakty/vyrobni-zavody.html" target="_blank">Webová stránka výrobce</a></div>`)[0];
+                popup_8f10b9da29a1f11ac28e46a4d3f4138d.setContent(html_1d9f8ffcbbcf7c41101961256cf30727);
+            
+        
+
+        marker_f9fbc8bf1d43ba6da68a4cf7379e214d.bindPopup(popup_8f10b9da29a1f11ac28e46a4d3f4138d)
+        ;
+
+        
+    
+    
+                marker_f9fbc8bf1d43ba6da68a4cf7379e214d.setIcon(icon_dc8d6e3462503e1e7cd6d151f4599e1d);
+            
+    
+            var marker_19e13b1fbdf7b9cd1a986e640047ab9f = L.marker(
+                [49.5392, 17.6169],
+                {
+}
+            ).addTo(map_e555ade0cbd0c4cb63b27aefbc9b4bce);
+        
+    
+            var icon_2ab9088c525380892dc92341e625d50c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "briefcase",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0371477eb01935c7dbbe82ce7279a740 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_351433f898bca5542bfa9d0ceb28545f = $(`<div id="html_351433f898bca5542bfa9d0ceb28545f" style="width: 100.0%; height: 100.0%;"><b>FIRMA:</b> WIENERBERGER (Porotherm - Jezernice)<br><a href="https://www.wienerberger.cz/o-nas/kontakty/vyrobni-zavody.html" target="_blank">Webová stránka výrobce</a></div>`)[0];
+                popup_0371477eb01935c7dbbe82ce7279a740.setContent(html_351433f898bca5542bfa9d0ceb28545f);
+            
+        
+
+        marker_19e13b1fbdf7b9cd1a986e640047ab9f.bindPopup(popup_0371477eb01935c7dbbe82ce7279a740)
+        ;
+
+        
+    
+    
+                marker_19e13b1fbdf7b9cd1a986e640047ab9f.setIcon(icon_2ab9088c525380892dc92341e625d50c);
+            
+    
+            var marker_c363d4a25272fa703a7ee6cd1e88b7a0 = L.marker(
+                [50.1294, 16.2202],
+                {
+}
+            ).addTo(map_e555ade0cbd0c4cb63b27aefbc9b4bce);
+        
+    
+            var icon_21cc4653ca474e0c737aa477aac033d2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "briefcase",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5750138d1b5779ee01c35ffd6365e878 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ea279c1fbfb1917340c10ac52b840c09 = $(`<div id="html_ea279c1fbfb1917340c10ac52b840c09" style="width: 100.0%; height: 100.0%;"><b>FIRMA:</b> WIENERBERGER (Porotherm - Kostelec n. O.)<br><a href="https://www.wienerberger.cz/o-nas/kontakty/vyrobni-zavody.html" target="_blank">Webová stránka výrobce</a></div>`)[0];
+                popup_5750138d1b5779ee01c35ffd6365e878.setContent(html_ea279c1fbfb1917340c10ac52b840c09);
+            
+        
+
+        marker_c363d4a25272fa703a7ee6cd1e88b7a0.bindPopup(popup_5750138d1b5779ee01c35ffd6365e878)
+        ;
+
+        
+    
+    
+                marker_c363d4a25272fa703a7ee6cd1e88b7a0.setIcon(icon_21cc4653ca474e0c737aa477aac033d2);
+            
+    
+            var marker_7a700f23d6aa03a3401e7a4dab59a42a = L.marker(
+                [50.3976, 14.9553],
+                {
+}
+            ).addTo(map_e555ade0cbd0c4cb63b27aefbc9b4bce);
+        
+    
+            var icon_ec31db92300be0524adf5d9473fed857 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "briefcase",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9a84e3589f66a89adf5183af783a3c3b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9cfbdfc9ce32873c9dde279d9b8c2fef = $(`<div id="html_9cfbdfc9ce32873c9dde279d9b8c2fef" style="width: 100.0%; height: 100.0%;"><b>FIRMA:</b> WIENERBERGER (Porotherm - Řepov)<br><a href="https://www.wienerberger.cz/o-nas/kontakty/vyrobni-zavody.html" target="_blank">Webová stránka výrobce</a></div>`)[0];
+                popup_9a84e3589f66a89adf5183af783a3c3b.setContent(html_9cfbdfc9ce32873c9dde279d9b8c2fef);
+            
+        
+
+        marker_7a700f23d6aa03a3401e7a4dab59a42a.bindPopup(popup_9a84e3589f66a89adf5183af783a3c3b)
+        ;
+
+        
+    
+    
+                marker_7a700f23d6aa03a3401e7a4dab59a42a.setIcon(icon_ec31db92300be0524adf5d9473fed857);
+            
+    
+            var marker_457654dd4fbe927c1a208d2802b62a33 = L.marker(
+                [49.219, 14.4097],
+                {
+}
+            ).addTo(map_e555ade0cbd0c4cb63b27aefbc9b4bce);
+        
+    
+            var icon_1e94bbcb02158544d2da4cf7a2ff14e7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "briefcase",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f3a6b0aea78226b7d8015f34778803f5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_46c120e596d74a735cb3bd55e518f2dd = $(`<div id="html_46c120e596d74a735cb3bd55e518f2dd" style="width: 100.0%; height: 100.0%;"><b>FIRMA:</b> WIENERBERGER (Porotherm - Týn n. V.)<br><a href="https://www.wienerberger.cz/o-nas/kontakty/vyrobni-zavody.html" target="_blank">Webová stránka výrobce</a></div>`)[0];
+                popup_f3a6b0aea78226b7d8015f34778803f5.setContent(html_46c120e596d74a735cb3bd55e518f2dd);
+            
+        
+
+        marker_457654dd4fbe927c1a208d2802b62a33.bindPopup(popup_f3a6b0aea78226b7d8015f34778803f5)
+        ;
+
+        
+    
+    
+                marker_457654dd4fbe927c1a208d2802b62a33.setIcon(icon_1e94bbcb02158544d2da4cf7a2ff14e7);
+            
+    
+            var marker_9ded8afcf018e0afdca93213cd4bc1fd = L.marker(
+                [48.9536, 17.3764],
+                {
+}
+            ).addTo(map_e555ade0cbd0c4cb63b27aefbc9b4bce);
+        
+    
+            var icon_3934d2a0674feeb9e57246aa05e097ac = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4ecebb5f5877eac5093e383cb1816432 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d5daf8e94b8136adecdb79c4e77efc69 = $(`<div id="html_d5daf8e94b8136adecdb79c4e77efc69" style="width: 100.0%; height: 100.0%;"><b>OBEC:</b> Veselí nad Moravou<br><a href="https://www.google.com/maps/search/?api=1&query=48.9536,17.3764" target="_blank">Zobrazit na Google Maps</a><br><hr style="margin: 5px 0;"><b>Nejbližší partner:</b> KOMA MODULAR (Vizovice)<br><b>Vzdálenost:</b> 44.8 km (vzdušnou čarou)</div>`)[0];
+                popup_4ecebb5f5877eac5093e383cb1816432.setContent(html_d5daf8e94b8136adecdb79c4e77efc69);
+            
+        
+
+        marker_9ded8afcf018e0afdca93213cd4bc1fd.bindPopup(popup_4ecebb5f5877eac5093e383cb1816432)
+        ;
+
+        
+    
+    
+                marker_9ded8afcf018e0afdca93213cd4bc1fd.setIcon(icon_3934d2a0674feeb9e57246aa05e097ac);
+            
+    
+            var poly_line_b8cdc2ffb809802235865bd185890d24 = L.polyline(
+                [[48.9536, 17.3764], [49.2154, 17.8444]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": "5, 5", "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_e555ade0cbd0c4cb63b27aefbc9b4bce);
+        
+    
+            var marker_31b759ecf16f5366b455e5d46bd43be6 = L.marker(
+                [49.1818, 16.388],
+                {
+}
+            ).addTo(map_e555ade0cbd0c4cb63b27aefbc9b4bce);
+        
+    
+            var icon_9e0f2b55b8f8b60ea1231ada7f68cbb1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4c4775b98eb6f4b53e20da6769ede1a4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f85835d4996c3d688d806abe84bc53f4 = $(`<div id="html_f85835d4996c3d688d806abe84bc53f4" style="width: 100.0%; height: 100.0%;"><b>OBEC:</b> Rosice<br><a href="https://www.google.com/maps/search/?api=1&query=49.1818,16.388" target="_blank">Zobrazit na Google Maps</a><br><hr style="margin: 5px 0;"><b>Nejbližší partner:</b> STRABAG (Brno)<br><b>Vzdálenost:</b> 14.8 km (vzdušnou čarou)</div>`)[0];
+                popup_4c4775b98eb6f4b53e20da6769ede1a4.setContent(html_f85835d4996c3d688d806abe84bc53f4);
+            
+        
+
+        marker_31b759ecf16f5366b455e5d46bd43be6.bindPopup(popup_4c4775b98eb6f4b53e20da6769ede1a4)
+        ;
+
+        
+    
+    
+                marker_31b759ecf16f5366b455e5d46bd43be6.setIcon(icon_9e0f2b55b8f8b60ea1231ada7f68cbb1);
+            
+    
+            var poly_line_5718037086b790c1585a8e638f9e85f0 = L.polyline(
+                [[49.1818, 16.388], [49.2319, 16.5771]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": "5, 5", "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_e555ade0cbd0c4cb63b27aefbc9b4bce);
+        
+    
+            var marker_3c243a8d6fa934fd415d4c667568d2f3 = L.marker(
+                [48.8555, 16.0488],
+                {
+}
+            ).addTo(map_e555ade0cbd0c4cb63b27aefbc9b4bce);
+        
+    
+            var icon_41798a2dc5986d3f807f05166f758d00 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ea9a487f34ad8bff532e032214bcdb7f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8fb29409af2b431f773ec00934dc637d = $(`<div id="html_8fb29409af2b431f773ec00934dc637d" style="width: 100.0%; height: 100.0%;"><b>OBEC:</b> Znojmo<br><a href="https://www.google.com/maps/search/?api=1&query=48.8555,16.0488" target="_blank">Zobrazit na Google Maps</a><br><hr style="margin: 5px 0;"><b>Nejbližší partner:</b> WIENERBERGER (Porotherm - Novosedly)<br><b>Vzdálenost:</b> 33.9 km (vzdušnou čarou)</div>`)[0];
+                popup_ea9a487f34ad8bff532e032214bcdb7f.setContent(html_8fb29409af2b431f773ec00934dc637d);
+            
+        
+
+        marker_3c243a8d6fa934fd415d4c667568d2f3.bindPopup(popup_ea9a487f34ad8bff532e032214bcdb7f)
+        ;
+
+        
+    
+    
+                marker_3c243a8d6fa934fd415d4c667568d2f3.setIcon(icon_41798a2dc5986d3f807f05166f758d00);
+            
+    
+            var poly_line_8c0c1c01ece199deaa62f656ca8069e3 = L.polyline(
+                [[48.8555, 16.0488], [48.8355, 16.5113]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": "5, 5", "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_e555ade0cbd0c4cb63b27aefbc9b4bce);
+        
+    
+            var marker_3ed52c4c76f7d5c0ea9f4063f63b9874 = L.marker(
+                [49.2982, 16.5319],
+                {
+}
+            ).addTo(map_e555ade0cbd0c4cb63b27aefbc9b4bce);
+        
+    
+            var icon_9259ca4066ff088740a121fca1bfdd21 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dc238d5648a5f396e2f68221a89db461 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0a0aea0ff5f8a82da37ecf25df112bcf = $(`<div id="html_0a0aea0ff5f8a82da37ecf25df112bcf" style="width: 100.0%; height: 100.0%;"><b>OBEC:</b> Kuřim<br><a href="https://www.google.com/maps/search/?api=1&query=49.2982,16.5319" target="_blank">Zobrazit na Google Maps</a><br><hr style="margin: 5px 0;"><b>Nejbližší partner:</b> STRABAG (Brno)<br><b>Vzdálenost:</b> 8.1 km (vzdušnou čarou)</div>`)[0];
+                popup_dc238d5648a5f396e2f68221a89db461.setContent(html_0a0aea0ff5f8a82da37ecf25df112bcf);
+            
+        
+
+        marker_3ed52c4c76f7d5c0ea9f4063f63b9874.bindPopup(popup_dc238d5648a5f396e2f68221a89db461)
+        ;
+
+        
+    
+    
+                marker_3ed52c4c76f7d5c0ea9f4063f63b9874.setIcon(icon_9259ca4066ff088740a121fca1bfdd21);
+            
+    
+            var poly_line_df8208e859ac18416bd864a34ea7c98d = L.polyline(
+                [[49.2982, 16.5319], [49.2319, 16.5771]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": "5, 5", "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_e555ade0cbd0c4cb63b27aefbc9b4bce);
+        
+    
+            var marker_3e41ef7e89cd7ba6f185c5b35d4fffa8 = L.marker(
+                [49.3807, 16.7627],
+                {
+}
+            ).addTo(map_e555ade0cbd0c4cb63b27aefbc9b4bce);
+        
+    
+            var icon_3dd72f20cb65c9a46086069da18a0651 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1f77ffcc42495eb840627b882fe651da = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bfe80483879dc4d0a48e1f68b46ca922 = $(`<div id="html_bfe80483879dc4d0a48e1f68b46ca922" style="width: 100.0%; height: 100.0%;"><b>OBEC:</b> Ostrov u Macochy<br><a href="https://www.google.com/maps/search/?api=1&query=49.3807,16.7627" target="_blank">Zobrazit na Google Maps</a><br><hr style="margin: 5px 0;"><b>Nejbližší partner:</b> STRABAG (Brno)<br><b>Vzdálenost:</b> 21.3 km (vzdušnou čarou)</div>`)[0];
+                popup_1f77ffcc42495eb840627b882fe651da.setContent(html_bfe80483879dc4d0a48e1f68b46ca922);
+            
+        
+
+        marker_3e41ef7e89cd7ba6f185c5b35d4fffa8.bindPopup(popup_1f77ffcc42495eb840627b882fe651da)
+        ;
+
+        
+    
+    
+                marker_3e41ef7e89cd7ba6f185c5b35d4fffa8.setIcon(icon_3dd72f20cb65c9a46086069da18a0651);
+            
+    
+            var poly_line_c848ddafc471d1cf1735acf8d5e5b301 = L.polyline(
+                [[49.3807, 16.7627], [49.2319, 16.5771]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": "5, 5", "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_e555ade0cbd0c4cb63b27aefbc9b4bce);
+        
+    
+            var marker_da358ac990613d32116078ad0e6280e8 = L.marker(
+                [49.0208, 17.0425],
+                {
+}
+            ).addTo(map_e555ade0cbd0c4cb63b27aefbc9b4bce);
+        
+    
+            var icon_9957bca88c3a8891fb0be60c4d2e3060 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_805a74b98eefeb13ff5b963ef790398b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_dce594a3b20d93b0bb38ab93e3a015e9 = $(`<div id="html_dce594a3b20d93b0bb38ab93e3a015e9" style="width: 100.0%; height: 100.0%;"><b>OBEC:</b> Želetice u Kyjova<br><a href="https://www.google.com/maps/search/?api=1&query=49.0208,17.0425" target="_blank">Zobrazit na Google Maps</a><br><hr style="margin: 5px 0;"><b>Nejbližší partner:</b> STRABAG (Brno)<br><b>Vzdálenost:</b> 41.2 km (vzdušnou čarou)</div>`)[0];
+                popup_805a74b98eefeb13ff5b963ef790398b.setContent(html_dce594a3b20d93b0bb38ab93e3a015e9);
+            
+        
+
+        marker_da358ac990613d32116078ad0e6280e8.bindPopup(popup_805a74b98eefeb13ff5b963ef790398b)
+        ;
+
+        
+    
+    
+                marker_da358ac990613d32116078ad0e6280e8.setIcon(icon_9957bca88c3a8891fb0be60c4d2e3060);
+            
+    
+            var poly_line_17e4c0a422ef51df1986b16e23552a89 = L.polyline(
+                [[49.0208, 17.0425], [49.2319, 16.5771]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": "5, 5", "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_e555ade0cbd0c4cb63b27aefbc9b4bce);
+        
+</script>
+</html>
